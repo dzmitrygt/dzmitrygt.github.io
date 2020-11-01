@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119779144-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-119779144-1');
+  </script>
+  <title>ChromoMatcher</title>
+ </head>
+ <body style="font-family:'Courier';width:900px;margin:auto;position:relative;">
+  <br>
+  <p style="text-align: right;"><a href="index_ru.html">Русская версия</a></p>
+  <br>
+
+  <table style="font-size:170%;">
+   <tr>
+	<td>
+	 <img src="logo.png">
+    </td>
+	<td>
+	 <b>ChromoMatcher</b>
+    </td>
+   </tr>
+  </table>
+  <br>
+  <p><a href="https://github.com/dzmitrygt/ChromoMatcher/releases/download/0.11/ChromoMatcher-0.11.exe"><b>Download</b> Binary Distribution of ChromoMatcher version 0.11 for Windows (Vista or newer)</a></p>
+  <p><a href="https://github.com/dzmitrygt/ChromoMatcher"><b>Browse</b> Source Code</a></p>
+  <br>
+  <p><b>ChromoMatcher</b> is a free and universal chromosome browser. It accepts data from GEDmatch, FTDNA and MyHeritage and represents it in a unified way. By using this tool you may see how thousands of matching segments collected from different sources distribute over your DNA. Additionally you may assign segments to various control groups, add comments to segments and examine their admixture results using different calculators.</p>
+  <p>
+   <i>How it looks like:</i>
+   <br>
+   <a href="crm.png"><img src="crm.png" alt="CRM" height="452" width="600"></a>
+  </p>
+  <h2>Import RAW data</h2>
+  <p>At first you need to create a new person. Go to <b>Person</b> menu and choose <b>Add</b>. You will see such dialog:</p>
+   <a href="add_person.png"><img src="add_person.png" alt="Add Person"></a>
+  </p>
+  <p>You may click <b>Browse</b> button and choose raw data file from <a href="https://www.familytreedna.com/"><b>FTDNA</b></a> or check <b>Add person without raw data</b> (then no admixture information will be available). On <a href="https://www.familytreedna.com/"><b>FTDNA</b></a> site go to <b>myFTDNA</b> &rarr; <b>Family Finder</b> &rarr; <b>Download Raw Data</b> and choose this file (you do not need to unpack it):</p>
+  <p>
+   <a href="ftdna_raw_data.png"><img src="ftdna_raw_data.png" alt="Raw data" height="247" width="700"></a>
+  </p>
+  <p>Set person's name, press <b>Import</b> button and you person will be created. Then click <b>Close</b> and choose you newly created person in <b>Persons</b> menu.</p>
+  <h2>Importing segments</h2>
+  <p>Go to segments menu and click <b>Import</b>. You will see various options how to populate <b>ChromoMatcher</b> with data. At first you need to download segments data from various sources.</p>
+  <h3>FTDNA</h3>
+  <p>On <a href="https://www.familytreedna.com/"><b>FTDNA</b></a> site go to <b>myFTDNA</b> &rarr; <b>Chromosome Browser</b> and click <b>Download All Matches to Excel (CSV Format)</b>.</p>
+  <p>
+   <a href="ftdna.png"><img src="ftdna.png" alt="FTDNA" height="230" width="700"></a>
+  </p>
+  <h3>MyHeritage</h3>
+  <p>On <a href="https://www.myheritage.com/"><b>MyHeritage</b></a> site go to <b>Review DNA Match</b> page or <b>Chromosome Browser</b> and choose <b>Advanced Options</b> &rarr; <b>Download shared DNA info</b>. Unfortunately, you can't download more than 7 matches at a time from <a href="https://www.myheritage.com/"><b>MyHeritage</b></a>.</p>
+  <p>
+   <a href="myheritage.png"><img src="myheritage.png" alt="MyHeritage" height="103" width="700"></a>
+  </p>
+  <h3>GEDmatch Chromosome Segment Matching</h3>
+  <p>There are two ways how to populate <b>ChromoMatcher</b> with <a href="https://www.gedmatch.com/"><b>GEDmatch</b></a> data. You may use <a href="https://www.gedmatch.com/d_list1z.php"><b>People who match one or both of 2 kits tool</b></a>. Save your result as Web Page without images.</p>
+  <p>
+   <a href="gedmatch1.png"><img src="gedmatch1.png" alt="GEDmatch1" height="629" width="600"></a>
+  </p>
+  <h3>GEDmatch Matching Segment Search</h3>
+  <p>Also you may use <a href="https://www.gedmatch.com/paytier1.php"><b>Tier 1 Matching Segment Search tool</b></a>. It is available for additional payment but I highly recommend to buy it and you will get the best data source possible and you will support <a href="https://www.gedmatch.com/"><b>GEDmatch</b></a> as well. In this case DNA segments will have different color and segments of the same color are likely to have common ancestor. You need to save web-page with <b>Tier 1</b> data as in previous example.</p>
+  <p>
+   <a href="gedmatch2.png"><img src="gedmatch2.png" alt="GEDmatch2" height="491" width="600"></a>
+  </p>
+  <h3>Importing to ChromoMatcher</h3>
+  <p>When you have collected all required data, go to <b>Segments</b> menu and click <b>Import</b>. Such dialog will appear:</p>
+  <p>
+   <a href="import.png"><img src="import.png" alt="Import"></a>
+  </p>
+  <p>
+   There are several options what to do with duplicates. If you choose <b>Ignore</b>, there will be no checks on adding new segments and duplicates may appear. If you choose <b>Overwrite</b>, previous data will be overwritten (rarely used). <b>Preserve</b> will preserve any segments which already exist. You may choose Minimum segment length - otherwise you may import a lot of too short segments. Segment is considered unique if chromosome, positions, name and <a href="http://www.gedmatch.com/"><b>GEDmatch</b></a> kit (for <a href="http://www.gedmatch.com/"><b>GEDmatch</b></a> segments) are the same. These values may be different even for the same segment from the same source (<a href="https://www.gedmatch.com/paytier1.php"><b>GEDmatch Tier 1</b></a> data is more precise than <a href="https://www.gedmatch.com/d_list1z.php"><b>GEDmatch 2 or more</b></a>).
+  </p>
+  <h2>Manually adding or editing segments</h2>
+  <p>Also you may import segments manually by <b>Segments</b> &rarr; <b>Add Manual</b> menu. You will see the same window if you double click a segment in a table - than you may edit it.</p>
+  <p>
+   <a href="add_or_edit.png"><img src="add_or_edit.png" alt="Add or Edit"></a>
+  </p>
+  <h2>Control Groups and Other Features</h2>
+  <p><b>Control Group</b> management and creation is easy with <b>Segments</b> &rarr; <b>Manage Control Groups</b> menu. Also you may choose <b>Segment</b> &rarr; <b>Find</b> (or <b>CTRL+F</b>) to find segment by name, kit and so on. <b>CTRL+A</b> selects all segments, <b>DEL</b> deletes selected (if you choose <b>Yes</b> in popped window).</p>
+  <h2>Context Menu</h2>
+  <p>If you <b>right click</b> on a segment you will see context menu.</p>
+  <p>
+   <a href="menu.png"><img src="menu.png" alt="Menu"></a>
+  </p>
+  <p>First tho options are available for any selection, other only if one segment is selected. <b>Admixture</b> is not available if you added a person without raw data. <b>Select All of the Same Kit</b> and <b>Control Group</b> available only if segment has kit number or control group.</p>
+  <h2>Admixture</h2>
+  <p>If you choose <b>Admixture</b> you will see such window:</p>
+  <p>
+   <a href="admixture.png"><img src="admixture.png" alt="Admixture" height="526" width="700"></a>
+  </p>
+  <p>Please note that admixture results are only a small step in a long journey which includes a lot of forms of investigation (including 'classic' genealogy). Do not be 100% confident about it (especially when you examine only a small segment of DNA which hardly exceeds 10 SNP with predefined admixture weights).</p>
+  <h2>LICENSING</h2>
+  <p>This program is distributed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><b>GNU GPLv3</b></a>. It has some 3-rd party components:</p>
+  <p><a href="http://dodecad.blogspot.com.by/"><b>Dodecad Ancestry Project</b></a> by <a href="http://dienekes.blogspot.com/"><b>Dienekes Pontikos</b></a> - see README.txt for licensing information. Distro may be downloaded here - <a href="http://dodecad.blogspot.com.by/2011/09/do-it-yourself-dodecad-v-21.html">http://dodecad.blogspot.com.by/2011/09/do-it-yourself-dodecad-v-21.html</a></p>
+  <p><a href="http://bga101.blogspot.com.by/"><b>Eurogenes Genetic Ancestry Project</b></a> - I haven't found license information with admixture data (it is available for download) so I had to ask a permission to include it in my project (and got it). I suppose you have to ask them if you have plans for redistributing their data.</p>
+  <p><a href="https://stachenov.github.io/quazip/"><b>QuaZIP - Qt/C++ wrapper for Minizip</b></a> by <b>Sergei Tachenov</b> and contributors.</p>
+  <p><a href="http://www.zlib.net/"><b>zlib</b></a> library.</p>
+  <p><a href="https://www.qt.io/"><b>Qt</b></a> library (Open Source).</p>
+  <p>If you want to contribute to my project please note that it has <b>CLA</b> (<b>Contributor License Agreement</b>) - it is included in the distro.</p>
+  <p>If you use any 3-rd party data with this project (segments information, other admixture calculators and so on) – it is your responsibility to check if you have a permission to use this data.</p>
+  <h2>Contact</h2>
+  <p>I hope my work will save you a lot of time and will cause a better understanding of your origins.</p>
+  <p>Good luck in your research!</p>
+  <p>htotatut at gmail dot com</p>
+  <br>
+  <br>
+  <br>
+ </body>
+</html>
+

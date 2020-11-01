@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119779144-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-119779144-1');
+  </script>
+  <title>ChromoMatcher</title>
+ </head>
+ <body style="font-family:'Courier';width:900px;margin:auto;position:relative;">
+  <br>
+  <p style="text-align: right;"><a href="index.html">English version</a></p>
+  <br>
+
+  <table style="font-size:170%;">
+   <tr>
+	<td>
+	 <img src="logo.png">
+    </td>
+	<td>
+	 <b>ChromoMatcher</b>
+    </td>
+   </tr>
+  </table>
+  <br>
+  <p><a href="https://github.com/dzmitrygt/ChromoMatcher/releases/download/0.11/ChromoMatcher-0.11.exe"><b>Загрузить</b> дистрибутив ChromoMatcher'а версии 0.11 для Windows (Vista и новее)</a></p>
+  <p><a href="https://github.com/dzmitrygt/ChromoMatcher"><b>Просмотр</b> исходного кода</a></p>
+  <br>
+  <p><b>ChromoMatcher</b> - это бесплатный универсальный хромосомный браузер. Он заполняется данными с GEDmatch, FTDNA и MyHeritage и представляет их в унифицированном виде. С помощью этого инструмента вы увидите как тысячи совпадающих сегментов распределяются по вашей ДНК. Дополнительно вы можете назначить сегментам контрольную группу, добавлять комментарии и изучать их этническую принадлежность с помощью различных калькуляторов.</p>
+  <p>
+   <i>Как это выглядит:</i>
+   <br>
+   <a href="crm_ru.png"><img src="crm_ru.png" alt="CRM" height="449" width="600"></a>
+  </p>
+  <h2>Импортирование "сырых" данных</h2>
+  <p>Для начала вам нужно создать новую персону. Зайдите в меню <b>Персона</b> и выберите <b>Добавить</b>. Вы увидите следующий диалог:</p>
+   <a href="add_person_ru.png"><img src="add_person_ru.png" alt="Add Person"></a>
+  </p>
+  <p>Вы можете нажать на кнопку <b>Обзор</b> и выбрать файл с "сырыми" данными от <a href="https://www.familytreedna.com/"><b>FTDNA</b></a> или выбрать опцию <b>Добавить персону без данных</b> (тогда этнокалькуляторы будут не доступны). На сайте <a href="https://www.familytreedna.com/"><b>FTDNA</b></a> зайдите в <b>myFTDNA > Family Finder > Download Raw Data</b> и выберите этот файл (вам не нужно его распаковывать):</p>
+  <p>
+   <a href="ftdna_raw_data.png"><img src="ftdna_raw_data.png" alt="Raw data" height="247" width="700"></a>
+  </p>
+  <p>Введите имя персоны, нажмите на <b>Импорт</b> и ваша персона будет создана. Потом нажмите на <b>Закрыть</b> и выберите созданную персону в одноименном меню.</p>
+  <h2>Импорт сегментов</h2>
+  <p>В меню <b>Сегменты</b> выберите <b>Импорт</b>. Вы увидите различные опции по заполнению данными <b>ChromoMatcher'а</b>. Однако, сначала вам нужно загрузить данные с сегментами из различных источников.</p>
+  <h3>FTDNA</h3>
+  <p>На сайте <a href="https://www.familytreedna.com/"><b>FTDNA</b></a> зайдите в <b>myFTDNA > Chromosome Browser</b> и выберите <b>Download All Matches to Excel (CSV Format)</b>.</p>
+  <p>
+   <a href="ftdna.png"><img src="ftdna.png" alt="FTDNA" height="230" width="700"></a>
+  </p>
+  <h3>MyHeritage</h3>
+  <p>На сайте <a href="https://www.myheritage.com/"><b>MyHeritage</b></a> зайдите в <b>Просмотр совпадений ДНК</b> или <b>Обзор хромосом</b> и выберите <b>Расширенные настройки > Загрузить данные о совпадающей ДНК</b>. К сожалению, вы не можете загружать более, чем 7 совпаденцев за раз.</p>
+  <p>
+   <a href="myheritage_ru.png"><img src="myheritage_ru.png" alt="MyHeritage" height="165" width="700"></a>
+  </p>
+  <h3>GEDmatch Chromosome Segment Matching</h3>
+  <p>Есть 2 способа как заполнить <b>ChromoMatcher</b> данными с <a href="https://www.gedmatch.com/"><b>GEDmatch</b></a>. Вы можете воспользоваться инструментом <a href="https://www.gedmatch.com/d_list1z.php"><b>People who match one or both of 2 kits</b></a>. Сохраните ваши результаты как веб-страницу без картинок.</p>
+  <p>
+   <a href="gedmatch1.png"><img src="gedmatch1.png" alt="GEDmatch1" height="629" width="600"></a>
+  </p>
+  <h3>GEDmatch Matching Segment Search</h3>
+  <p>Также вы можете воспользоваться инструментом <a href="https://www.gedmatch.com/paytier1.php"><b>Tier 1 Matching Segment Search tool</b></a>. Он доступен за дополнительную плату, но я весьма рекомендую купить <b>Tier 1</b> и тогда вы получите доступ к лучшему источнику данных о ваших совпаденцах и более того - поддержите <a href="https://www.gedmatch.com/"><b>GEDmatch</b></a>. В этом случае совпадающие сегменты будут окрашены в различный цвет: матчи с сегментами одинакового цвета скорее всего имеют общего предка. Вам нужно сохранить веб-страницу с результатами <b>Tier 1</b> как в предыдущем примере:</p>
+  <p>
+   <a href="gedmatch2.png"><img src="gedmatch2.png" alt="GEDmatch2" height="491" width="600"></a>
+  </p>
+  <h3>Импорт в ChromoMatcher</h3>
+  <p>Когда вы закончите со сбором данных, зайдите в меню <b>Сегменты</b> и выберите <b>Импорт</b>. Появится такой диалог:</p>
+  <p>
+   <a href="import_ru.png"><img src="import_ru.png" alt="Import"></a>
+  </p>
+  <p>
+   Есть несколько вариантов того, что делать с дубликатами. Если вы выберите <b>Игнорировать</b>, тогда проверок на дубликаты не будет. Если вы выберите <b>Перезаписать</b>, предыдущие данные будут перезаписаны (редко используется на практике). Если вы выберите <b>Сохранить</b>, то существующие сегменты будут сохранены без изменений. Вы можете указать минимальную длину сегмента - иначе может импортироваться большое количество слишком маленьких сегментов. Сегмент считается уникальным, если совпадают номер хромосомы, позиции, имя и кит <a href="http://www.gedmatch.com/"><b>GEDmatch</b></a> (только для данных с <a href="http://www.gedmatch.com/"><b>GEDmatch</b></a>). Эти значения могут отличаться даже для одного сегмента из одного источника (например, данные из <a href="https://www.gedmatch.com/paytier1.php"><b>GEDmatch Tier 1</b></a> более точны, чем <a href="https://www.gedmatch.com/d_list1z.php"><b>GEDmatch 2 or more</b></a>).
+  </p>
+  <h2>Добавление сегментов вручную</h2>
+  <p>Также вы можете добавлять сегменты вручную с помощью пункта меню <b>Сегменты > Добавить вручную</b>. Вы увидите такое же окно если дважды щелкните мышью в таблице - тогда вы сможете отредактировать сегмент.</p>
+  <p>
+   <a href="add_or_edit_ru.png"><img src="add_or_edit_ru.png" alt="Add or Edit"></a>
+  </p>
+  <h2>Контрольные группы и другие возможности</h2>
+  <p>Для управления <b>контрольными группами</b> зайдите в меню <b>Сегменты > Управление контрольными группами</b>. Так же вы можете выбрать <b>Сегмент > Поиск</b> (или нажать <b>CTRL+F</b>) для поиска сегмента по имени, киту и т.д. <b>CTRL+A</b> выберет все сегменты, <b>DEL</b> удаляет выбранные сегменты (если вы ответите <b>Да</b> в появившемся окне).</p>
+  <h2>Контекстное меню</h2>
+  <p>Если вы нажмете <b>правой кнопкой</b> мыши по сегменту, вы увидите контекстное меню.</p>
+  <p>
+   <a href="menu_ru.png"><img src="menu_ru.png" alt="Menu"></a>
+  </p>
+  <p>Первые 2 пункта доступны в любом случае, остальные только тогда, когда выбран 1 сегмент. <b>Этнокалькулятор</b> не доступен если вы добавили персону без "сырых" данных. Выбор всех сегментов с одинаковым <b>китом</b> и <b>контрольной группой</b> доступен только если сегмент имеет кит или контрольную группу.</p>
+  <h2>Этнокалькулятор</h2>
+  <p>Если вы выберите пункт <b>Этнокалькулятор</b>, то появится такое окно:</p>
+  <p>
+   <a href="admixture_ru.png"><img src="admixture_ru.png" alt="Admixture" height="526" width="700"></a>
+  </p>
+  <p>Имейте ввиду, что результаты этнокалькулятора сами по себе мало о чем говорят и это всего лишь один маленький шаг в долгом пути, который включает в себя различные виды исследований (в том числе "классическую" генеалогию). Не будьте на 100% уверены в результатах (особенно когда речь идет лишь о маленьком сегменте ДНК, который зачастую содержит чуть более 10-и снипов с имеющимися коэффициентами о этнической принадлежности).</p>
+  <h2>Лицензия</h2>
+  <p>Эта программа распространяется по лицензии <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><b>GNU GPLv3</b></a>. Он включает в себя несколько сторонних разработок:</p>
+  <p><a href="http://dodecad.blogspot.com.by/"><b>Dodecad Ancestry Project</b></a> авторства <a href="http://dienekes.blogspot.com/"><b>Dienekes Pontikos</b></a>. См. файл README.TXT с информацией о лицензировании. Дистрибутив можно скачать отсюда - <a href="http://dodecad.blogspot.com.by/2011/09/do-it-yourself-dodecad-v-21.html">http://dodecad.blogspot.com.by/2011/09/do-it-yourself-dodecad-v-21.html</a></p>
+  <p><a href="http://bga101.blogspot.com.by/"><b>Eurogenes Genetic Ancestry Project</b></a> - я не нашел информации о лицензировании в архиве с данными (они доступны для загрузки), поэтому я спрашивал разрешение на распространение их данных в составе своего бесплатного проекта с открытым исходным кодом и получил его. Уточните у авторов условия если вы хотите распространять их данные.</p>
+  <p><a href="https://stachenov.github.io/quazip/"><b>QuaZIP - Qt/C++ wrapper for Minizip</b></a> авторства <b>Sergei Tachenov</b> и других.</p>
+  <p><a href="http://www.zlib.net/"><b>zlib</b></a> библиотека.</p>
+  <p><a href="https://www.qt.io/"><b>Qt</b></a> библиотека (Open Source версия).</p>
+  <p>Если вы хотите дополнить мой проект, то имейте ввиду, что он имеет <b>CLA</b> (<b>Contributor License Agreement</b>) - текст соглашения доступен в дистрибутиве.</p>
+  <p>Если вы используете для работы с проектом какие-либо данные (информация о сегментах, другие этнокалькуляторы и т.д.) - правомерность использования этих данных на вашей ответственности.</p>
+  <h2>Контакт</h2>
+  <p>Я надеюсь, что моя работа сэкономит вам кучу времени и приведет к лучшему пониманию вашего происхождения.</p>
+  <p>Удачи в вашем исследовании!</p>
+  <p>htotatut at gmail dot com</p>
+  <br>
+  <br>
+  <br>
+ </body>
+</html>
+
